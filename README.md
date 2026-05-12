@@ -35,9 +35,9 @@ flowchart TD
     C --> D["🔄 Logic App Playbook\nAzure Workflow"]
     D --> E["📄 Parse JSON\nDecode alert entity payload"]
     E --> F["🌐 Extract IP Address\n185.220.101.1\n45.33.32.156"]
-    F --> G["🛡️ VirusTotal Enrichment\n14/92 engines · malicious"]
+    F --> G["🛡️ VirusTotal Enrichment\n185.220.101.1 → 14/92 · malicious\n45.33.32.156 → 4/92 · low risk"]
     G --> H{Reputation\nScore Analysis}
-    H -->|Malicious| I["🚨 Slack Alert\n#soc-alerts · Block NOW"]
+    H -->|Malicious| I["🚨 Slack Alert\n185.220.101.1\n#soc-alerts · Block NOW"]
     H -->|Low Risk| J["🔖 Bookmark Alert\nAdded to watchlist"]
 
     style A fill:#0d1f35,color:#5DCAA5,stroke:#1D9E75
