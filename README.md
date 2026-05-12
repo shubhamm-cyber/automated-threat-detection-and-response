@@ -111,9 +111,9 @@ The enrichment response includes:
 
 If the malicious score exceeds the defined threshold, the Logic App playbook identifies the IP address as potentially malicious and initiates an automated response workflow.
 
-In this test scenario, the IP address `185.220.101.1` returned a malicious reputation score greater than `5`, triggering the high-risk response action.
-
 <img width="1208" height="685" alt="6-Condition" src="https://github.com/user-attachments/assets/508d8dd4-7863-4c70-97f8-a81da400a012" />
+
+In this test scenario, the IP address `185.220.101.1` returned a malicious reputation score greater than `5`, triggering the high-risk response action.
 
 * A detailed alert is automatically sent to Slack
 * Security analysts receive enriched threat context instantly
